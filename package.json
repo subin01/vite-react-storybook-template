@@ -38,6 +38,7 @@
     }
   },
   "dependencies": {
+    "blingblingjs": "^2.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -91,7 +92,12 @@
     "jest": "^28.1.1",
     "jest-environment-jsdom": "^28.1.1",
     "lint-staged": "^13.0.2",
+    "postcss": "^8.4.14",
+    "postcss-cli": "^10.0.0",
+    "postcss-import": "^14.1.0",
+    "postcss-nesting": "^10.1.10",
     "prettier": "^2.7.1",
+    "sass": "^1.54.0",
     "sort-package-json": "^1.57.0",
     "start-server-and-test": "^1.14.0",
     "storybook-addon-designs": "^6.3.1",

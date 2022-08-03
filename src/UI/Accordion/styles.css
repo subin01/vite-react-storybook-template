@@ -1,0 +1,31 @@
+.accordion {
+  border: 1px solid #999;
+  border-left: none;
+  border-right: none;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.accordion__title {
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  background: none;
+  padding-inline: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.accordion__title svg {
+  width: 1em;
+  height: 1em;
+}
+
+.accordion {
+  & .accordion__content {
+    padding-block: 1rem;
+    background: yellow;
+  }
+}

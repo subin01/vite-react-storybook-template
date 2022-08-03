@@ -1,0 +1,19 @@
+@font-face {
+  font-family: GHDModeratLight;
+  src: url(../assets/GHD-Moderat-Light.woff);
+}
+
+@font-face {
+  font-family: GHDModeratRegular;
+  src: url(../assets/GHD-Moderat-Regular.woff);
+}
+
+@font-face {
+  font-family: GHDModeratBold;
+  src: url(../assets/GHD-Moderat-Black.woff);
+}
+
+@font-face {
+  font-family: GHDModeratBlack;
+  src: url(../assets/GHD-Moderat-Black.woff);
+}

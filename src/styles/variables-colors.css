@@ -1,0 +1,26 @@
+:root {
+  /* Primary Colour palette */
+  --ghd-black: #000000;
+  --ghd-white: #ffffff;
+  /* Primary Tints */
+  --black-tint-90: #191919;
+  --black-tint-80: #333333;
+  --black-tint-70: #4d4d4d;
+  --black-tint-60: #666666;
+  --black-tint-50: #808080;
+  --black-tint-40: #999999;
+  --black-tint-30: #b3b3b3;
+  --black-tint-20: #cccccc;
+  --black-tint-15: #d9d9d9;
+  --black-tint-10: #e6e6e6;
+  --black-tint-10: #e6e6e6;
+  --black-tint-5: #f2f2f2;
+  --black-tint-2: #fafafa;
+
+  /* Secondary colour palette  */
+  --ghd-orange: #ff3902;
+  --ghd-yellow: #ffb303;
+  --ghd-green: #009962;
+  --ghd-light-blue: #00bde3;
+  --ghd-dark-blue: #003763;
+}
