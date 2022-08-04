@@ -1,11 +1,9 @@
-import $ from 'blingblingjs'; // es6 module
-
 const card = {
   init: () => {
-    const [card] = $('.card');
-    card.on('click', (e) => {
+    const card = document.querySelector(".card");
+    card.onclick = () => {
       alert(`card clicked`);
-    });
+    };
   },
 };
 

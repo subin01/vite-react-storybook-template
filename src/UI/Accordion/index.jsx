@@ -9,9 +9,7 @@ export default function Accordion({ title, children }) {
         <button className="accordion__title" aria-expanded="false">
           {title}
         </button>
-        <div className="accordion__content" hidden="true">
-          {children}
-        </div>
+        <div className="accordion__content">{children}</div>
       </article>
     </>
   );

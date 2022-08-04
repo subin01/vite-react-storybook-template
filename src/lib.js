@@ -1,9 +1,11 @@
-import "./styles/index.css";
+// @ts-nocheck
 
-import card from "./UI/Card/scripts";
+import "./styles/index.css";
 import "./UI/Card/styles.css";
-card.init();
+import "./UI/Accordion/styles.css";
 
 import accordion from "./UI/Accordion/scripts";
-import "./UI/Accordion/styles.css";
+import card from "./UI/Card/scripts";
+
+card.init();
 accordion.init();

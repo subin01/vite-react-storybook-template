@@ -9,13 +9,13 @@ export default {
 
 const Template = args => <Typography {...args} />;
 
-export const Primary = Template.bind({});
+export const Headings = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
-Primary.args = {
-  label: "Heading",
+Headings.args = {
+  label: "GHD Power of Commitment",
 };
 
-Primary.parameters = {
+Headings.parameters = {
   design: {
     type: "figma",
     url: "https://www.figma.com/file/oaPmxA6fmQfoYso9yKXFyn/GHD-Design-System?node-id=773%3A32833",

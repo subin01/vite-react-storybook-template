@@ -1,32 +1,32 @@
-import React from 'react';
+import React from "react";
 
-import Button from '.';
+import Button from ".";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'UI/Button',
+  title: "UI/Button",
   component: Button,
 };
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template = (args) => <Button {...args} />;
+const Template = args => <Button {...args} />;
 
 export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Primary.args = {
   secondary: false,
-  label: 'Button',
+  label: "Button",
 };
 
 Primary.parameters = {
   design: {
-    type: 'figma',
-    url: 'https://www.figma.com/file/oaPmxA6fmQfoYso9yKXFyn/GHD-Design-System?node-id=1368%3A48852',
+    type: "figma",
+    url: "https://www.figma.com/file/oaPmxA6fmQfoYso9yKXFyn/GHD-Design-System?node-id=1488%3A60221",
   },
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
-  label: 'Button',
+  label: "Button",
   secondary: true,
 };

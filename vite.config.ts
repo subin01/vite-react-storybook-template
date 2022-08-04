@@ -1,5 +1,5 @@
 import { resolve } from "path";
-import legacy from "@vitejs/plugin-legacy";
+// import legacy from "@vitejs/plugin-legacy";
 import react from "@vitejs/plugin-react";
 import { fileURLToPath } from "url";
 import { defineConfig } from "vite";
@@ -37,7 +37,8 @@ export default defineConfig({
       },
       output: {
         assetFileNames: "assets/[name][extname]", // default: "assets/[name]-[hash][extname]"
-        chunkFileNames: "[name].js", // Default: "[name]-[hash].js"
+        chunkFileNames: "chunk-[name].js", // Default: "[name]-[hash].js"
+        entryFileNames: "[name].js",
       },
     },
   },
