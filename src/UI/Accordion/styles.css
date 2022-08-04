@@ -16,11 +16,25 @@
   justify-content: space-between;
   cursor: pointer;
   padding: var(--accordion-padding);
+  position: relative;
 }
 
 .accordion__title svg {
   width: 1em;
   height: 1em;
+}
+
+.accordion__title::after {
+  content: "";
+  display: block;
+  width: 2em;
+  height: 2em;
+  background: url("../../assets/md-plus.svg");
+  background-size: contain;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 
 .accordion {
