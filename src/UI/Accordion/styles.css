@@ -1,8 +1,8 @@
 .accordion {
+  --accordion-padding: var(--spacing-3);
   border: 1px solid #999;
   border-left: none;
   border-right: none;
-  padding: 1rem;
   margin: 1rem 0;
 }
 
@@ -11,11 +11,11 @@
   font-weight: bold;
   border: none;
   background: none;
-  padding-inline: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
   cursor: pointer;
+  padding: var(--accordion-padding);
 }
 
 .accordion__title svg {
@@ -25,7 +25,7 @@
 
 .accordion {
   & .accordion__content {
-    padding-block: 1rem;
-    background: yellow;
+    padding: var(--accordion-padding);
+    background: var(--black-tint-10);
   }
 }
