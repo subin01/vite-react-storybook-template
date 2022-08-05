@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.css";
 // import $ from 'blingblingjs'
-import Button from "../Button";
+import Button from "@/UI/Button";
 
 export function Card({ className, header, footer, content }) {
   const headerContent = header ? (

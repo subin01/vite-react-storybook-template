@@ -24,4 +24,9 @@ module.exports = {
   features: {
     storyStoreV7: true,
   },
+  viteFinal: async (config, arg2) => {
+    config.resolve.baseUrl = ".";
+    config.resolve.alias = { "@": ["/src/"] };
+    return config;
+  },
 };

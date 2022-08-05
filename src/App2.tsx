@@ -1,3 +1,4 @@
+import "@/styles/index.css";
 import Logo from "@/assets/logo.png";
 import HelloWorld from "@/components/HelloWorld/HelloWorld";
 
