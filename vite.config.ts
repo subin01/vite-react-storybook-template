@@ -1,5 +1,5 @@
 import react from "@vitejs/plugin-react";
-import { resolve } from "path";
+import path, { resolve } from "path";
 import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 
@@ -26,6 +26,7 @@ export default defineConfig({
         main: resolve(__dirname, "index.html"),
         main2: resolve(__dirname, "app2.html"),
         all: resolve(__dirname, "all.html"),
+        sitecore: resolve(__dirname, "sitecore.html"),
         lib: resolve(__dirname, "/src/lib.js"),
       },
       output: {
@@ -33,6 +34,12 @@ export default defineConfig({
         chunkFileNames: "chunk-[name].js", // Default: "[name]-[hash].js"
         entryFileNames: "[name].js",
       },
+    },
+  },
+  resolve: {
+    /** alias: only for Css Url Alias resolve. Otherwise read from tsconfig */
+    alias: {
+      "@": path.join(__dirname, "src"),
     },
   },
 });
