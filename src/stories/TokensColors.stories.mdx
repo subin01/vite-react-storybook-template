@@ -1,0 +1,17 @@
+import { Meta, ColorPalette, ColorItem, Typeset } from "@storybook/addon-docs";
+import { tokens, colours, fontSizes } from "./tokens";
+
+<Meta title="Tokens/Colors" />
+
+<ColorPalette>
+  {colours.map((token, i) => {
+    return <ColorItem key={i} title={token.key} colors={[token.value]} />;
+  })}
+</ColorPalette>
+
+<Typeset
+  fontSizes={fontSizes.map(fs => fs.value)}
+  fontWeight={"bold"}
+  sampleText={"SampleText"}
+  fontFamily={"arial"}
+/>

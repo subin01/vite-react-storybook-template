@@ -1,6 +1,7 @@
-@import "./variables-colors.css";
-@import "./variables-typography.css";
-@import "./variables-spacing.css";
+@import "./reset.css";
+@import "./tokens-colors.css";
+@import "./tokens-typography.css";
+@import "./tokens-spacing.css";
 
 @import "./fonts.css";
 @import "./typography.css";

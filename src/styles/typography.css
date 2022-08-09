@@ -18,29 +18,51 @@ h3,
 h4,
 h5,
 h6,
-body,
-.h6 {
-  font-size: var(--font-size-3);
+body {
+  font-size: var(--font-size-6);
   margin-top: 0;
   margin-bottom: 0.5em;
 }
 
-.h5 {
-  font-size: var(--font-size-4);
-}
-
-.h4 {
-  font-size: var(--font-size-5);
-}
-
-.h3 {
+.h6 {
   font-size: var(--font-size-6);
 }
 
+.h5 {
+  font-size: var(--font-size-5);
+}
+
+.h4 {
+  font-size: var(--font-size-4);
+}
+
+.h3 {
+  font-size: var(--font-size-3);
+}
+
 .h2 {
-  font-size: var(--font-size-7);
+  font-size: var(--font-size-2);
 }
 
 .h1 {
-  font-size: var(--font-size-8);
+  font-size: var(--font-size-1);
+}
+
+.regular {
+  font-weight: var(--font-weight-regular);
+  font-family: var(--font-family-regular);
+}
+
+.light {
+  font-weight: var(--font-weight-light);
+  font-family: var(--font-family-light);
+}
+
+.black {
+  font-weight: var(--font-weight-black);
+  font-family: var(--font-family-black);
+}
+
+.italic {
+  font-style: italic;
 }

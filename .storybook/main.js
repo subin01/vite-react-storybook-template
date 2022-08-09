@@ -6,6 +6,7 @@ module.exports = {
     "@storybook/addon-interactions",
     "@whitespace/storybook-addon-html",
     "@storybook/addon-a11y",
+    "@storybook/addon-docs",
     "storybook-addon-designs",
     "@hover/storybook-addon-pseudo-states",
     {
