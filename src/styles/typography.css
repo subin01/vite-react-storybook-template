@@ -48,6 +48,28 @@ body {
   font-size: var(--font-size-1);
 }
 
+.text-xxs {
+  font-size: var(--font-size-9);
+}
+.text-xs {
+  font-size: var(--font-size-8);
+}
+.text-sm {
+  font-size: var(--font-size-7);
+}
+.text-base {
+  font-size: var(--font-size-6);
+}
+.text-lg {
+  font-size: var(--font-size-5);
+}
+.text-xl {
+  font-size: var(--font-size-4);
+}
+.text-xxl {
+  font-size: var(--font-size-3);
+}
+
 .regular {
   font-weight: var(--font-weight-regular);
   font-family: var(--font-family-regular);

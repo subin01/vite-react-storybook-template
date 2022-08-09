@@ -8,10 +8,3 @@ import { tokens, colours, fontSizes } from "./tokens";
     return <ColorItem key={i} title={token.key} colors={[token.value]} />;
   })}
 </ColorPalette>
-
-<Typeset
-  fontSizes={fontSizes.map(fs => fs.value)}
-  fontWeight={"bold"}
-  sampleText={"SampleText"}
-  fontFamily={"arial"}
-/>

@@ -8,24 +8,15 @@ export default {
 const Template = args => (
   <div>
     {spacings.map(s => (
-      <article
-        key={s.key}
-        style={{
-          display: "flex",
-          borderBottom: "1px solid #CCC",
-          padding: "1rem 0",
-        }}
-      >
-        <div style={{ width: "8em" }}>{s.key}</div>
-        <div style={{ width: "8em" }}>{s.value}</div>
-        <div
+      <div key={s.key} className="token-spacing-example">
+        <span>{s.key}</span>
+        <span>{s.value}</span>
+        <article
           style={{
-            height: s.value,
-            width: s.value,
-            backgroundColor: "#BFE5D7",
+            width: `var(${s.key})`,
           }}
-        ></div>
-      </article>
+        ></article>
+      </div>
     ))}
   </div>
 );

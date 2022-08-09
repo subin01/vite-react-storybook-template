@@ -1,7 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
-import App1 from "./App1";
+import App1 from "@/apps/App1";
 
 const container = document.getElementById("root");
 const root = createRoot(container as HTMLDivElement);
