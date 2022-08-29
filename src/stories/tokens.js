@@ -29,7 +29,21 @@ const filter = needles =>
 const FONTSIZE_KEY = "--font-size";
 const fontSizes = filter([FONTSIZE_KEY]);
 
-const COLOURS_KEYS = ["--black-tint", "--ghd-"];
+const COLOURS_KEYS = [
+  "--color-black",
+  "--color-white",
+  "--color-orange",
+  "--color-yellow",
+  "--color-green",
+  "--color-lightblue",
+  "--color-darkblue",
+  "--color-iris",
+  "--color-cerise",
+  "--color-success",
+  "--color-info",
+  "--color-warning",
+  "--color-error",
+];
 const colours = filter(COLOURS_KEYS);
 
 const SPACING_KEY = ["--spacing-"];

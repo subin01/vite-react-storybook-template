@@ -8,22 +8,24 @@ export default {
   component: Accordion,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
-    title: { control: "text" },
-    children: { control: "text" },
+    // title: { control: "text" },
+    isExpanded: { control: "boolean" },
+    // children: { control: "text" },
   },
 };
 
-// More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
+// More on component Templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template = args => <Accordion {...args} />;
 
-export const Primary = Template.bind({});
+export const Default = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
-Primary.args = {
+Default.args = {
   title: "Accordion title",
+  isExpanded: true,
   children:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
 };
 
-Primary.play = ({ canvasElement }) => {
+Default.play = ({ canvasElement }) => {
   accordion.init();
 };

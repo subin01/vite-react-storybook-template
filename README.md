@@ -16,16 +16,32 @@ This is a [React](https://reactjs.org) + [TypeScript](https://www.typescriptlang
 
 ## Getting started
 
-1. Install dependencies.
+```bash
+npm install
+```
 
-   ```bash
-   npm install
-   ```
+### Developing Apps
 
-2. Start dev server with hot reload at http://localhost:3000.
-   ```bash
-   npm run dev
-   ```
+```bash
+npm run dev
+```
+
+### Developing Library components:
+
+```bash
+npm run storybook
+```
+
+### Build Library components:
+
+```bash
+npm run build
+```
+
+### Testing Library components:
+
+run any dev-server
+and open dist/sitecore.html
 
 ## Recommended VS Code extensions
 
@@ -33,6 +49,8 @@ This is a [React](https://reactjs.org) + [TypeScript](https://www.typescriptlang
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
 - [PostCSS Language Support](https://marketplace.visualstudio.com/items?itemName=csstools.postcss)
+
+- [Live Server (Five Server)](https://marketplace.visualstudio.com/items?itemName=yandeu.five-server)
 
 ## Other commands
 

@@ -1,6 +1,5 @@
-// @ts-nocheck
-
 import "./styles/index.css";
+import "./UI/Header/styles.css";
 import "./UI/Card/styles.css";
 import "./UI/Accordion/styles.css";
 

@@ -1,25 +1,71 @@
 :root {
   /* Primary Colour palette */
-  --ghd-black: #000000;
-  --ghd-white: #ffffff;
+  --color-black: #000000;
+  --color-white: #ffffff;
   /* Primary Tints */
-  --black-tint-90: #191919;
-  --black-tint-80: #333333;
-  --black-tint-70: #4d4d4d;
-  --black-tint-60: #666666;
-  --black-tint-50: #808080;
-  --black-tint-40: #999999;
-  --black-tint-30: #b3b3b3;
-  --black-tint-20: #cccccc;
-  --black-tint-15: #d9d9d9;
-  --black-tint-10: #e6e6e6;
-  --black-tint-5: #f2f2f2;
-  --black-tint-2: #fafafa;
+  --color-black-1: #191919;
+  --color-black-2: #333333;
+  --color-black-3: #4d4d4d;
+  --color-black-4: #666666;
+  --color-black-5: #808080;
+  --color-black-6: #999999;
+  --color-black-7: #b3b3b3;
+  --color-black-8: #cccccc;
+  --color-black-9: #d9d9d9;
+  --color-black-10: #e6e6e6;
+  --color-black-11: #f2f2f2;
+  --color-black-12: #fafafa;
 
   /* Secondary colour palette  */
-  --ghd-orange: #ff3902;
-  --ghd-yellow: #ffb303;
-  --ghd-green: #009962;
-  --ghd-light-blue: #00bde3;
-  --ghd-dark-blue: #003763;
+  --color-orange: #ff3902;
+  --color-yellow: #ffb303;
+  --color-green: #009962;
+  --color-lightblue: #00bde3;
+  --color-darkblue: #003763;
+
+  /* Secondary Tints */
+  --color-orange-1: #ff6a41;
+  --color-orange-2: #ff9c80;
+  --color-orange-3: #ffcdbf;
+  --color-orange-4: #ffebe5;
+
+  --color-yellow-1: #ffc542;
+  --color-yellow-2: #ffd981;
+  --color-yellow-3: #ffebc0;
+  --color-yellow-4: #fff7e5;
+
+  --color-green-1: #3fb289;
+  --color-green-2: #7fccb0;
+  --color-green-3: #bfe5d7;
+  --color-green-4: #e5f4ef;
+
+  --color-lightblue-1: #3fcdea;
+  --color-lightblue-2: #7fdef0;
+  --color-lightblue-3: #bfeef8;
+  --color-lightblue-4: #e5f8fc;
+
+  --color-darkblue-1: #3f6989;
+  --color-darkblue-2: #7f9bb0;
+  --color-darkblue-3: #bfcdd7;
+  --color-darkblue-4: #e5ebef;
+
+  /* Kit colours */
+  --color-iris: #a450ff;
+  --color-cerise: #ff0055;
+
+  /* Notification Colours */
+  --color-success: #00715c;
+  --color-info: #003763;
+  --color-warning: #f59403;
+  --color-error: #b72d00;
+
+  /* Notification Tints */
+  --color-success-1: #18c287;
+  --color-success-2: #e5f4ef;
+  --color-info-1: #03aed0;
+  --color-info-2: #e5f8fc;
+  --color-warning-1: #ffc132;
+  --color-warning-2: #fff7e5;
+  --color-error-1: #ff460f;
+  --color-error-2: #ffebe5;
 }

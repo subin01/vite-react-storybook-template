@@ -6,27 +6,25 @@ import Button from ".";
 export default {
   title: "UI/Button",
   component: Button,
+  argTypes: {
+    size: { control: "select", options: ["", "small", "large"] },
+  },
 };
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template = args => <Button {...args} />;
 
-export const Primary = Template.bind({});
+export const Default = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
-Primary.args = {
+Default.args = {
   secondary: false,
+  size: "",
   label: "Button",
 };
 
-Primary.parameters = {
+Default.parameters = {
   design: {
     type: "figma",
     url: "https://www.figma.com/file/oaPmxA6fmQfoYso9yKXFyn/GHD-Design-System?node-id=1488%3A60221",
   },
-};
-
-export const Secondary = Template.bind({});
-Secondary.args = {
-  label: "Button",
-  secondary: true,
 };

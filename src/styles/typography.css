@@ -88,3 +88,7 @@ body {
 .italic {
   font-style: italic;
 }
+
+p {
+  margin-bottom: 1em;
+}

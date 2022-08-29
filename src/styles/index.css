@@ -1,26 +1,28 @@
 @import "./reset.css";
 @import "./tokens-colors.css";
-@import "./tokens-typography.css";
 @import "./tokens-spacing.css";
-@import "./tokens-breakpoints.css";
 @import "./fonts.css";
+@import "./tokens-breakpoints.css";
+@import "./grid.css";
+@import "./tokens-typography.css";
 @import "./typography.css";
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-gap: var(--spacing-1);
-
-  @media (--bp-tablet) {
-    grid-gap: var(--spacing-2);
-  }
-
-  @media (--bp-desktop) {
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: var(--spacing-3);
-  }
-
-  @media (--bp-desktop-hd) {
-    grid-gap: var(--spacing-4);
-  }
+/* Start:  Temporary Styles */
+body {
+  max-width: var(--bp-xlarge);
+  margin: 0 auto;
+  padding-inline: var(--spacing-3);
+  border: 1px solid var(--color-black-11);
+  border-top: none;
+  border-bottom: none;
 }
+
+a {
+  color: var(--color-iris);
+  text-underline-offset: var(--spacing-1);
+}
+
+main {
+  margin-top: var(--spacing-4);
+}
+/* End:  Temporary Styles */

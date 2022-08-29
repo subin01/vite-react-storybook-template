@@ -1,45 +1,51 @@
 .accordion {
-  --accordion-padding: var(--spacing-3);
-  border: 1px solid #999;
+  --accordion-bg: var(--color-black-12);
+  border-bottom: 2px solid var(--color-black-10);
   border-left: none;
   border-right: none;
-  margin: 1rem 0;
 }
 
 .accordion__title {
-  font-size: 16px;
-  font-weight: bold;
+  font-size: var(--font-size-6);
+  padding-inline: var(--spacing-4);
+  padding-block: var(--spacing-4);
+  background: var(--color-white);
   border: none;
-  background: none;
   width: 100%;
   display: flex;
   justify-content: space-between;
   cursor: pointer;
-  padding: var(--accordion-padding);
   position: relative;
 }
 
-.accordion__title svg {
-  width: 1em;
-  height: 1em;
+.accordion__title[aria-expanded="true"] {
+  background: var(--accordion-bg);
 }
 
 .accordion__title::after {
   content: "";
   display: block;
-  width: 2em;
-  height: 2em;
-  background: url("@/assets/md-plus.svg");
+  width: 2rem;
+  height: 2rem;
+  background: url("@/assets/icons/chevron-down.svg");
   background-size: contain;
   position: absolute;
-  right: 0;
+  right: var(--spacing-3);
   top: 50%;
   transform: translate(0, -50%);
 }
 
-.accordion {
-  & .accordion__content {
-    padding: var(--accordion-padding);
-    background: var(--black-tint-10);
+.accordion__content {
+  padding: var(--spacing-3) var(--spacing-4) var(--spacing-6) var(--spacing-4);
+  background: var(--accordion-bg);
+}
+
+@media (--bp-medium) {
+  .accordion {
+    & .accordion__title {
+      padding-inline: var(--spacing-4);
+      font-family: var(--font-family-black);
+      font-weight: var(--font-weight-black);
+    }
   }
 }

@@ -1,15 +1,18 @@
-import React from "react";
-import PropTypes from "prop-types";
 import "./styles.css";
 
-export default function Accordion({ title, children }) {
+import PropTypes from "prop-types";
+import React from "react";
+
+export default function Accordion({ title, isExpanded = false, children }) {
   return (
     <>
       <article className="accordion">
-        <button className="accordion__title" aria-expanded="false">
+        <button className="accordion__title" aria-expanded={isExpanded}>
           {title}
         </button>
-        <div className="accordion__content">{children}</div>
+        <div className="accordion__content" hidden={!isExpanded}>
+          {children}
+        </div>
       </article>
     </>
   );
@@ -17,5 +20,6 @@ export default function Accordion({ title, children }) {
 
 Accordion.propTypes = {
   title: PropTypes.string,
+  isExpanded: PropTypes.boolean,
   children: PropTypes.any,
 };

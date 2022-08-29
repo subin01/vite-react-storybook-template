@@ -21,6 +21,7 @@ export default defineConfig({
     // sourcemap: true,
     minify: false,
     cssCodeSplit: false,
+    emptyOutDir: true,
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),

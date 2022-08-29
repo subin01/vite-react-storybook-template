@@ -6,10 +6,16 @@ import React from "react";
 /**
  * Primary UI component for user interaction
  */
-const Button = ({ secondary, label, ...props }) => {
-  const mode = secondary ? "button--secondary" : "";
+const Button = ({ secondary, size, disabled, label, ...props }) => {
+  const variantClass = secondary ? "button--secondary" : "";
+  const sizeClass = size !== "" ? `button--${size}` : "";
   return (
-    <button type="button" className={["button", mode].join(" ")} {...props}>
+    <button
+      type="button"
+      className={["button", variantClass, sizeClass].join(" ")}
+      disabled={disabled}
+      {...props}
+    >
       {label}
     </button>
   );
@@ -20,6 +26,8 @@ export default Button;
 Button.propTypes = {
   secondary: PropTypes.bool,
   label: PropTypes.string.isRequired,
+  size: PropTypes.string,
+  disabled: PropTypes.bool,
   /**
    * Optional click handler
    */
@@ -28,5 +36,7 @@ Button.propTypes = {
 
 Button.defaultProps = {
   secondary: false,
+  size: "",
+  disabled: false,
   onClick: undefined,
 };

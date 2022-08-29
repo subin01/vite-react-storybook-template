@@ -2,16 +2,26 @@ const accordion = {
   init: () => {
     const accordions = document.querySelectorAll(".accordion");
     Array.prototype.forEach.call(accordions, accordion => {
-      let btn = accordion.querySelector(".accordion__title");
-      btn.setAttribute("aria-expanded", false);
       let target = accordion.querySelector(".accordion__content");
-      target.setAttribute("hidden", true);
+      let btn = accordion.querySelector(".accordion__title");
+
+      let expanded = btn.getAttribute("aria-expanded") === "true";
+      // debugger;
+      const setAttrs = show => {
+        if (show) {
+          target.removeAttribute("hidden");
+          btn.setAttribute("aria-expanded", "true");
+        } else {
+          target.setAttribute("hidden", "true");
+          btn.setAttribute("aria-expanded", "false");
+        }
+      };
+
+      setAttrs(expanded);
 
       btn.onclick = () => {
-        let expanded = btn.getAttribute("aria-expanded") === "true" || false;
-
-        btn.setAttribute("aria-expanded", !expanded);
-        target.hidden = expanded;
+        let expanded = btn.getAttribute("aria-expanded") === "true";
+        setAttrs(!expanded);
       };
     });
   },
