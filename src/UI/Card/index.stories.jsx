@@ -1,6 +1,7 @@
 import { Card } from ".";
 import card from "./scripts";
 // import {Card, init} from './Card';
+import Button from "@/UI/Button";
 
 export default {
   title: "UI/Card",
@@ -10,15 +11,24 @@ export default {
   // },
 };
 
-const Template = args => <Card {...args} />;
+const Template = args => (
+  <Card
+    {...args}
+    footer={
+      <>
+        <Button label="save" />
+        <Button label="cancel" secondary />
+      </>
+    }
+  />
+);
 
 export const Primary = Template.bind({});
 
 Primary.args = {
   className: "",
-  content: "Card content section",
+  children: "Card content section",
   header: "Card Header",
-  footer: "Card footer",
 };
 
 Primary.play = ({ canvasElement }) => {

@@ -1,18 +1,23 @@
 .card {
-  border: 1px solid black;
-  padding: 15px;
+  --card-padding: var(--spacing-3);
+
+  border: 1px solid var(--color-black-5);
+  padding: var(--card-padding);
   border-radius: 5px;
+  cursor: pointer;
 }
 .card__header {
-  border-bottom: 1px solid black;
-  padding-bottom: 15px;
-  margin-bottom: 25px;
+  border-bottom: 1px solid var(--color-black-5);
+  padding-bottom: var(--card-padding);
+  margin-bottom: var(--card-padding);
   font-weight: 900;
-  font-size: 1.3rem;
+  font-size: var(--font-size-4);
 }
 
 .card__footer {
-  border-top: 1px solid black;
-  padding: 15px 0;
-  margin-top: 25px;
+  border-top: 1px solid var(--color-black-5);
+  padding-top: var(--card-padding);
+  margin-top: var(--card-padding);
+  display: flex;
+  gap: var(--spacing-3);
 }

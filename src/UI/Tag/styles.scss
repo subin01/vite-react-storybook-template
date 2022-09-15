@@ -1,0 +1,42 @@
+.tag {
+  --tag--hover: var(--color-iris);
+
+  border: 0;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  display: inline-block;
+
+  padding-inline: var(--spacing-4);
+  padding-block: var(--spacing-3);
+  font-family: var(--font-family-black);
+  font-weight: var(--font-weight-black);
+  font-size: var(--font-size-8);
+  background-color: var(--btn-bg);
+  min-width: 3.25rem;
+  outline-offset: 3px;
+  box-shadow: 0px 0px 0px 2px var(--color-iris) inset;
+  transition: all 400ms ease;
+
+  &:hover {
+    box-shadow: 0px 0px 0px 2px var(--color-black) inset;
+  }
+
+  &:disabled {
+    box-shadow: none;
+    background: var(--color-black-9) !important;
+    pointer-events: none;
+  }
+}
+
+.tag[aria-checked="true"] {
+  background: var(--color-iris);
+  color: var(--color-white);
+}
+
+// Spacing for Grouping
+.tag {
+  margin-inline: var(--spacing-1);
+  margin-block: var(--spacing-1);
+}

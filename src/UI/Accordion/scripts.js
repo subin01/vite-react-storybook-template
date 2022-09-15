@@ -5,23 +5,22 @@ const accordion = {
       let target = accordion.querySelector(".accordion__content");
       let btn = accordion.querySelector(".accordion__title");
 
-      let expanded = btn.getAttribute("aria-expanded") === "true";
-      // debugger;
+      let isExpanded = btn.getAttribute("aria-expanded") === "true";
       const setAttrs = show => {
         if (show) {
-          target.removeAttribute("hidden");
+          target.hidden = false;
           btn.setAttribute("aria-expanded", "true");
         } else {
-          target.setAttribute("hidden", "true");
+          target.hidden = true;
           btn.setAttribute("aria-expanded", "false");
         }
       };
 
-      setAttrs(expanded);
+      setAttrs(isExpanded);
 
       btn.onclick = () => {
-        let expanded = btn.getAttribute("aria-expanded") === "true";
-        setAttrs(!expanded);
+        let isExpanded = btn.getAttribute("aria-expanded") === "true";
+        setAttrs(!isExpanded);
       };
     });
   },

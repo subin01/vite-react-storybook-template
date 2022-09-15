@@ -1,0 +1,22 @@
+.checkbox {
+  --btn-bg: var(--color-black);
+  --btn-bg-hover: var(--color-black-2);
+  --btn-color: var(--color-white);
+  --btn-x-padding: var(--spacing-6);
+  --btn-y-padding: var(--spacing-3);
+  --btn-icon-size: 2em;
+
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  input {
+    margin: 0 var(--spacing-3) 0 0;
+    height: 1.13rem;
+    width: 1.13rem;
+  }
+}
+
+:invalid {
+  box-shadow: 0 0 0 3px red;
+}

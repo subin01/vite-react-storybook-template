@@ -1,0 +1,7 @@
+:root {
+  --shadow-xs: 0px 2px 6px rgba(0, 0, 0, 0.07);
+  --shadow-s: 0px 3px 8px rgba(0, 0, 0, 0.1);
+  --shadow-m: 0px 5px 12px rgba(0, 0, 0, 0.12);
+  --shadow-l: 0px 6px 15px rgba(0, 0, 0, 0.12);
+  --shadow-xl: 0px 8px 18px rgba(0, 0, 0, 0.12);
+}

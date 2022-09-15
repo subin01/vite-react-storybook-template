@@ -1,9 +1,8 @@
 import React from "react";
 import "./styles.css";
 // import $ from 'blingblingjs'
-import Button from "@/UI/Button";
 
-export function Card({ className, header, footer, content }) {
+export function Card({ className, header, footer, children }) {
   const headerContent = header ? (
     <div className="card__header">{header}</div>
   ) : null;
@@ -13,10 +12,8 @@ export function Card({ className, header, footer, content }) {
   return (
     <article className={`card ${className}`}>
       {headerContent}
-      {content}
+      {children}
       {footerContent}
-      <Button label="save" />
-      <Button label="cancel" secondary />
     </article>
   );
 }

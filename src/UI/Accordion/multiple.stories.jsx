@@ -15,16 +15,16 @@ export default {
 
 // More on component Templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template = () => (
-  <>
+  <div className="shadow-m" style={{ maxWidth: "40rem", margin: "2rem auto" }}>
     <Accordion title="Banking and insurance">
       <p>
         Droughts have devastating effects on crop cultivation and livestock
         farming, while flooding and storms can damage infrastructure, crop
         lands, livestock shelter and farming equipment. Water-related disasters
-        can also have a long-term impact on the productivity of agricultural
-        land. Disruption to food production can impact imports and exports,
-        which can affect global food security as well as impacting health and
-        social equity within countries.
+        can also have <a href="https://google.com/">a long-term impact</a> on
+        the productivity of agricultural land. Disruption to food production can
+        impact imports and exports, which can affect global food security as
+        well as impacting health and social equity within countries.
       </p>
     </Accordion>
     <Accordion title="Agriculture" isExpanded>
@@ -38,10 +38,10 @@ const Template = () => (
         Droughts have devastating effects on crop cultivation and livestock
         farming, while flooding and storms can damage infrastructure, crop
         lands, livestock shelter and farming equipment. Water-related disasters
-        can also have a long-term impact on the productivity of agricultural
-        land. Disruption to food production can impact imports and exports,
-        which can affect global food security as well as impacting health and
-        social equity within countries.
+        can also have <a href="https://microsoft.com/">a long-term impact</a> on
+        the productivity of agricultural land. Disruption to food production can
+        impact imports and exports, which can affect global food security as
+        well as impacting health and social equity within countries.
       </p>
     </Accordion>
     <Accordion title="Energy and utilities">
@@ -66,7 +66,7 @@ const Template = () => (
         social equity within countries.
       </p>
     </Accordion>
-  </>
+  </div>
 );
 
 export const Multiple = Template.bind({});
