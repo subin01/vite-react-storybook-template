@@ -1,6 +1,10 @@
-import "./styles.css";
+import "./styles.scss";
 
-export default function Header({ title }) {
+interface Props {
+  title?: string;
+}
+
+export default function Header({ title }: Props) {
   return (
     <header>
       <a href="/" className="logo">
