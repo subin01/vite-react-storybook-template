@@ -17,6 +17,7 @@ module.exports = {
         },
       },
     },
+    "@storybook/addon-interactions",
   ],
   framework: "@storybook/react",
   core: {
@@ -24,6 +25,7 @@ module.exports = {
   },
   features: {
     storyStoreV7: true,
+    interactionsDebugger: true, // 👈 Enable playback controls
   },
   viteFinal: async (config, arg2) => {
     config.resolve.baseUrl = ".";

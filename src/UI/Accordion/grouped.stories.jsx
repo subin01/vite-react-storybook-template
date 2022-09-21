@@ -1,3 +1,5 @@
+import { expect } from "@storybook/jest";
+import { userEvent, within } from "@storybook/testing-library";
 import React from "react";
 
 import Accordion from ".";
@@ -32,7 +34,7 @@ const Template = () => (
           health and social equity within countries.
         </p>
       </Accordion>
-      <Accordion open title="Agriculture">
+      <Accordion title="Agriculture">
         <p>
           Agriculture is the world’s thirstiest industry – accounting for almost 70% of global water withdrawals. Our
           Aquanomics model estimates that the sector could lose $416bn in economic output between 2022 and 2050.
@@ -41,7 +43,7 @@ const Template = () => (
         <p>
           Droughts have devastating effects on crop cultivation and livestock farming, while flooding and storms can
           damage infrastructure, crop lands, livestock shelter and farming equipment. Water-related disasters can also
-          have <a href="https://microsoft.com/">a long-term impact</a> on the productivity of agricultural land.
+          have <a href="https://microsoft.com/">a short-term impact</a> on the productivity of agricultural land.
           Disruption to food production can impact imports and exports, which can affect global food security as well as
           impacting health and social equity within countries.
         </p>
@@ -64,6 +66,13 @@ const Template = () => (
           within countries.
         </p>
       </Accordion>
+      <Accordion title="test title1" open>
+        <p>test content1</p>
+      </Accordion>
+
+      <Accordion title="test title2">
+        <p>test content2</p>
+      </Accordion>
     </div>
   </>
 );
@@ -76,8 +85,19 @@ Grouped.args = {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
 };
 
-Grouped.play = ({ canvasElement }) => {
+Grouped.play = async ({ canvasElement }) => {
   accordion.init();
+
+  try {
+    const canvas = within(canvasElement);
+
+    // 👇 Simulate interactions with the component
+    await userEvent.click(canvas.getByText("test title2"));
+    await expect(canvas.getByText("test content2")).toBeInTheDocument();
+    await expect(canvas.getByText("test content1")).not.toBeVisible();
+  } catch (e) {
+    console.log(e);
+  }
 };
 
 Grouped.parameters = {

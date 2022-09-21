@@ -36,7 +36,7 @@ const Template = () => (
         <p>
           Droughts have devastating effects on crop cultivation and livestock farming, while flooding and storms can
           damage infrastructure, crop lands, livestock shelter and farming equipment. Water-related disasters can also
-          have <a href="https://microsoft.com/">a long-term impact</a> on the productivity of agricultural land.
+          have <a href="https://microsoft.com/">a short-term impact</a> on the productivity of agricultural land.
           Disruption to food production can impact imports and exports, which can affect global food security as well as
           impacting health and social equity within countries.
         </p>
