@@ -3,14 +3,21 @@ import React from "react";
 const Template1 = ({ children, fontWeight = "black", italic }) => {
   const weightClass = fontWeight === "black" ? "" : fontWeight;
   const italicClass = italic ? "italic" : "";
+  const baseClass = "heading-";
+  const variants = ["1", "2", "3", "4", "5", "6"];
   return (
     <>
-      <div className={`h1 ${weightClass} ${italicClass}`}>{children}</div>
-      <div className={`h2 ${weightClass} ${italicClass}`}>{children}</div>
-      <div className={`h3 ${weightClass} ${italicClass}`}>{children}</div>
-      <div className={`h4 ${weightClass} ${italicClass}`}>{children}</div>
-      <div className={`h5 ${weightClass} ${italicClass}`}>{children}</div>
-      <div className={`h6 ${weightClass} ${italicClass}`}>{children}</div>
+      {variants.map(variant => (
+        <div className="token-example" key={variant}>
+          <span>{`.${baseClass}${variant}`}</span>
+          <div
+            key={variant}
+            className={`${baseClass}${variant} ${weightClass} ${italicClass}`}
+          >
+            {children}
+          </div>
+        </div>
+      ))}
     </>
   );
 };
@@ -33,19 +40,22 @@ Headings.parameters = {
 const Template2 = ({ children, fontWeight = "regular", italic }) => {
   const weightClass = fontWeight === "regular" ? "" : fontWeight;
   const italicClass = italic ? "italic" : "";
-  const baseClass = "text-";
-  const variants = ["xxs", "xs", "sm", "base", "lg", "xl", "xxl"];
+  const baseClass = "body-";
+  const variants = ["1", "2", "3", "4", "5"];
   return (
-    <div className="token-texts-example">
+    <>
       {variants.map(variant => (
-        <article
-          key={variant}
-          className={`${baseClass}${variant} ${weightClass} ${italicClass}`}
-        >
-          {children}
-        </article>
+        <div className="token-example" key={variant}>
+          <span>{`.${baseClass}${variant}`}</span>
+          <div
+            key={variant}
+            className={`${baseClass}${variant} ${weightClass} ${italicClass}`}
+          >
+            {children}
+          </div>
+        </div>
       ))}
-    </div>
+    </>
   );
 };
 

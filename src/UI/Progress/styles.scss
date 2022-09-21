@@ -1,10 +1,12 @@
 .progress {
-  display: flex;
   width: 100%;
-  // -webkit-appearance: none;
+  position: relative;
+  padding-bottom: var(--spacing-5);
 }
 
 .progress:after {
   content: attr(value) "%";
-  // position: absolute;
+  position: absolute;
+  left: 0;
+  top: 1em;
 }

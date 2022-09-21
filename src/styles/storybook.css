@@ -2,27 +2,22 @@
  StoryBook specific styles, used only for presentation purposes
 */
 
-.token-spacing-example {
+.token-example {
   display: flex;
   border-bottom: 1px solid #ccc;
   padding: 1rem 0;
+  align-items: center;
+  gap: 1rem;
 
   & span {
     display: inline-block;
-    width: 8em;
+    min-width: 9em;
   }
 
   & article {
     background-color: #bfe5d7;
     aspect-ratio: 1;
   }
-}
-
-.token-texts-example {
-  maxwidth: 33%;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
 }
 
 .tokens-grid-example {

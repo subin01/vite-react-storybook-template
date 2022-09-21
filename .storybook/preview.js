@@ -40,7 +40,25 @@ export const parameters = {
   },
   options: {
     storySort: {
-      order: ["Intro", "Tokens", "UI", "Components", "Pages"],
+      order: [
+        "Intro",
+        "Tokens",
+        [
+          "Colors",
+          "Spacings",
+          "BreakPoints",
+          "Grid",
+          "Spacings",
+          "Shadows",
+          "FontSizes",
+          "Typography",
+          "*",
+        ],
+        "UI",
+        "Components",
+        "Pages",
+        "*",
+      ],
     },
   },
   viewport: { viewports: customViewports, defaultViewport: "responsive" },

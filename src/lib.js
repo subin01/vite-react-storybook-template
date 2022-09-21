@@ -1,7 +1,7 @@
 import "./styles/index.css";
 import "./UI/Header/styles.css";
 import "./UI/Card/styles.css";
-import "./UI/Accordion/styles.css";
+import "./UI/Accordion/styles.scss";
 import "./UI/Tag/styles.scss";
 import "./UI/Checkbox/styles.scss";
 import "./UI/Progress/styles.scss";

@@ -49,7 +49,10 @@ const colours = filter(COLOURS_KEYS);
 const SPACING_KEY = ["--spacing-"];
 const spacings = filter(SPACING_KEY);
 
-export { tokens, colours, fontSizes, spacings };
+const BREAKPOINT_KEY = ["--bp-"];
+const breakpoints = filter(BREAKPOINT_KEY);
+
+export { tokens, colours, fontSizes, spacings, breakpoints };
 
 // export default [
 //   {

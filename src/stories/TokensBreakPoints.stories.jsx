@@ -1,29 +1,24 @@
 import React from "react";
-import { spacings } from "./tokens";
+import { breakpoints } from "./tokens";
 
 export default {
-  title: "Tokens/Spacings",
+  title: "Tokens/BreakPoints",
 };
 
 const Template = args => (
   <div>
-    {spacings.map(s => (
+    {breakpoints.map(s => (
       <div key={s.key} className="token-example">
         <span>{s.key}</span>
         <span>{s.value}</span>
-        <article
-          style={{
-            width: `var(${s.key})`,
-          }}
-        ></article>
       </div>
     ))}
   </div>
 );
 
-export const Spacings = Template.bind({});
+export const BreakPoints = Template.bind({});
 
-Spacings.parameters = {
+BreakPoints.parameters = {
   design: {
     type: "figma",
     url: "https://www.figma.com/file/oaPmxA6fmQfoYso9yKXFyn/GHD-Design-System?node-id=854%3A32471",

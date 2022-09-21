@@ -11,6 +11,7 @@
 
 html {
   accent-color: var(--color-iris);
+  scroll-behavior: smooth;
 }
 
 /* Start:  Temporary Styles */
