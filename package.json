@@ -15,6 +15,7 @@
     "prepare": "husky install",
     "serve": "npm run build && vite preview --port 3000",
     "storybook": "start-storybook -p 6006",
+    "test:all": "jest --watchAll",
     "test:e2e": "start-server-and-test serve http://127.0.0.1:3000/ 'cypress open'",
     "test:e2e:ci": "start-server-and-test serve http://127.0.0.1:3000/ 'cypress run'",
     "test:unit": "jest --watch",

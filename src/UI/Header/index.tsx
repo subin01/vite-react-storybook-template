@@ -10,7 +10,7 @@ export default function Header({ title }: Props) {
       <a href="/" className="logo">
         GHD
       </a>
-      <span>{title}</span>
+      <span className="app-name">{title}</span>
       <div className="menu">
         <a href="/">Menu</a>
       </div>
