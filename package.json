@@ -76,6 +76,8 @@
     "@whitespace/storybook-addon-html": "^5.0.0",
     "babel-loader": "^8.2.5",
     "commitizen": "^4.2.4",
+    "commitlint-config-jira": "^1.6.4",
+    "commitlint-plugin-jira-rules": "^1.6.4",
     "cypress": "^10.2.0",
     "eslint": "^8.18.0",
     "eslint-config-prettier": "^8.5.0",

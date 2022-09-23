@@ -5850,6 +5850,26 @@
     "strip-bom" "4.0.0"
     "strip-json-comments" "3.1.1"
 
+"commitlint-config-jira@^1.6.4":
+  "integrity" "sha512-DNVOzQZgNPZuFYU61mVRssm0t+4IR7eF5VQA3RCGYdz45usauekjguOXJmV3uxEHIoqVDctKN2UrUlhbKCymrQ=="
+  "resolved" "https://registry.npmjs.org/commitlint-config-jira/-/commitlint-config-jira-1.6.4.tgz"
+  "version" "1.6.4"
+  dependencies:
+    "commitlint-jira-utils" "^1.6.4"
+    "opencollective-postinstall" "^2.0.2"
+
+"commitlint-jira-utils@^1.6.4":
+  "integrity" "sha512-1Mp5b0Q31XBreH3EKrDy8sD6vZmcXFm1x6OXeskaiiOKm5C1qQ0ObOiF66RKozuUAixaOGgHje6N/T+nfd5GBA=="
+  "resolved" "https://registry.npmjs.org/commitlint-jira-utils/-/commitlint-jira-utils-1.6.4.tgz"
+  "version" "1.6.4"
+
+"commitlint-plugin-jira-rules@^1.6.4":
+  "integrity" "sha512-e+5pfp6emYp02Qm0OCs8rvPApKpTK7+HpndA2R9RJzNY0kg2i2/CGHuWd+StigMZe1Wmeo/d3H8Cwwlz3biWxA=="
+  "resolved" "https://registry.npmjs.org/commitlint-plugin-jira-rules/-/commitlint-plugin-jira-rules-1.6.4.tgz"
+  "version" "1.6.4"
+  dependencies:
+    "commitlint-jira-utils" "^1.6.4"
+
 "common-path-prefix@^3.0.0":
   "integrity" "sha512-QE33hToZseCH3jS0qN96O/bSh3kaw/h+Tq7ngyY9eWDUnTlTNUyqfqvCXioLe5Na5jFsL78ra/wuBU4iuEgd4w=="
   "resolved" "https://registry.npmjs.org/common-path-prefix/-/common-path-prefix-3.0.0.tgz"
@@ -11317,6 +11337,11 @@
     "define-lazy-prop" "^2.0.0"
     "is-docker" "^2.1.1"
     "is-wsl" "^2.2.0"
+
+"opencollective-postinstall@^2.0.2":
+  "integrity" "sha512-8AV/sCtuzUeTo8gQK5qDZzARrulB3egtLzFgteqB2tcT4Mw7B8Kt7JcDHmltjz6FOAHsvTevk70gZEbhM4ZS9Q=="
+  "resolved" "https://registry.npmjs.org/opencollective-postinstall/-/opencollective-postinstall-2.0.3.tgz"
+  "version" "2.0.3"
 
 "optionator@^0.8.1":
   "integrity" "sha512-+IW9pACdk3XWmmTXG8m3upGUJst5XRGzxMRjXzAuJ1XnIFNvfhjjIuYkDvysnPQ7qzqVzLt78BCruntqRhWQbA=="
